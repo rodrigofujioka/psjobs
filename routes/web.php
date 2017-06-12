@@ -32,6 +32,7 @@ Route::group(['prefix' => 'api'], function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/admin', 'AdminController@index')->name('home');
+Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/vagas', 'OportunidadeController@vagas')->name('vagas');
 Route::get('/inscritos', 'AdminController@inscritos')->name('inscritos');
 Route::get('/atualizar', 'UserController@index')->name('atualizar');

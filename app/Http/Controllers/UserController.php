@@ -19,7 +19,7 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function inscri(Request $request)
+    public function index(Request $request)
     {
         $request->user()->authorizeRoles(['usuario']);
 

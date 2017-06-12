@@ -30,19 +30,20 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'PSJOBS') }}
+                    PSJOBS
                 </a>
             </div>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 @if (Auth::user())
-                <ul class="nav navbar-nav">
-                    &nbsp;<li><a href="{{route('atualizar')}}">Listar Inscritos</a></li>
-                </ul>
-                @endif
+                    <ul class="nav navbar-nav">
+                        &nbsp;<li><a href="{{route('inscritos')}}">Listar Inscritos</a></li>
+                        &nbsp;<li><a href="{{route('vagas')}}">Oportunidades - Vagas</a></li>
+                    </ul>
+            @endif
 
-                <!-- Right Side Of Navbar -->
+            <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
                     @if (Auth::guest())
@@ -62,7 +63,6 @@
                                                      document.getElementById('logout-form').submit();">
                                         Logout
                                     </a>
-""
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST"
                                           style="display: none;">
                                         {{ csrf_field() }}
@@ -80,6 +80,6 @@
 </div>
 
 <!-- Scripts -->
-<script src="{{ asset('js/app.js') }}"></script>
+{{--<script src="{{ asset('js/app.js') }}"></script>--}}
 </body>
 </html>

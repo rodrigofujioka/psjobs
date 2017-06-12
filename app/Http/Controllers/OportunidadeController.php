@@ -7,6 +7,15 @@ use Illuminate\Http\Request;
 
 class OportunidadeController extends Controller
 {
+
+    /**
+     * @author Vinícius Enéas Bezerra <vinicius.eneas@gmail.com>
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function vagas()
+    {
+        return view('admin.oportunidade');
+    }
     /**
      * Display a listing of the resource.
      *
