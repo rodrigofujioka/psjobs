@@ -9,7 +9,15 @@
 
 ## Sobre o projeto
 
-Projeto PHP desenvolvido para uma aplicação de uma API responsável pelo cadastro de oportunidades de emprego voltado as empresas e inscrição nas vagas voltado ao usuário.
+Projeto PHP desenvolvido para uma aplicação API responsável pelo CRUD de objetos os quais descritos abaixo:
+
+- Pessoas;
+- Oportunidades de vagas de emprego;
+- Inscrição nas vagas;
+- Listagem de inscritos nas vagas.
+
+Obs.: O login e registro de usuário será realizado pela CRUD nativo do framework, o que agiliza o processo de desenvolvimento da aplicação
+que está voltada para a demonstração da API.
 
 ## Tecnologia
 
@@ -21,18 +29,20 @@ Projeto PHP desenvolvido para uma aplicação de uma API responsável pelo cadas
 
 ## API
 
+| Method | URI |
+| --------| --------|
 | DELETE   | api/inscricao/{id}     |
-| GET|HEAD | api/inscricoes         |
+| GET      | api/inscricoes         |
 | POST     | api/inscricoes         |
 | PUT      | api/oportunidade/{id}  |
 | DELETE   | api/oportunidade/{id}  |
-| GET|HEAD | api/oportunidades      |
+| GET      | api/oportunidades      |
 | POST     | api/oportunidades      |
 | PUT      | api/pessoa/{id}        |
 | DELETE   | api/pessoa/{id}        |
-| GET|HEAD | api/pessoas            |
+| GET      | api/pessoas            |
 | POST     | api/pessoas            |
-| GET|HEAD | api/user               |
+| GET      | api/user               |
 
 ## SQL
 
